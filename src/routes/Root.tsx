@@ -10,6 +10,7 @@ import {
   IoLogoSoundcloud,
   IoMailOutline,
 } from "react-icons/io5";
+import { AiOutlineSpotify } from "react-icons/ai";
 
 export default function Root() {
   return (
@@ -43,13 +44,25 @@ export default function Root() {
                 <a
                   href="https://www.instagram.com/futureRahma"
                   className="link"
+                  target="_blank"
                 >
                   <IoLogoInstagram className={styles.socialIcon} />
+                </a>
+                <a
+                  href="https://open.spotify.com/artist/16AIvrFqhQyhBbe7HXIWkw?autoplay=true"
+                  className="link"
+                  target="_blank"
+                >
+                  <AiOutlineSpotify className={styles.socialIcon} />
                 </a>
                 <a href="mailto:futurerahma@futurerahma.com" className="link">
                   <IoMailOutline className={styles.socialIcon} />
                 </a>
-                <a href="https://soundcloud.com/futurerahma" className="link">
+                <a
+                  href="https://soundcloud.com/futurerahma"
+                  className="link"
+                  target="_blank"
+                >
                   <IoLogoSoundcloud className={styles.socialIcon} />
                 </a>
               </div>
