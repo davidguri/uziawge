@@ -27,26 +27,29 @@ export default function Root() {
               </Link>
             </div>
             <div className={styles.linksContainer}>
-              <Link className={"link"} to="/ads">
-                <text className={styles.linkText}>ADS</text>
-              </Link>
               <Link className={"link"} to="/music">
                 <text className={styles.linkText}>MUSIC</text>
               </Link>
               <Link className={"link"} to="/merch">
                 <text className={styles.linkText}>MERCH</text>
               </Link>
+              <Link className={"link"} to="/promotions">
+                <text className={styles.linkText}>PROMOTIONS</text>
+              </Link>
               <Link className={"link"} to="/merch">
-                <text className={styles.linkText}>FANPAGE</text>
+                <text className={styles.linkText}>MOLLY WORLD</text>
               </Link>
               <div className={styles.socialLinksContainer}>
-                <a href="https://instagram.com/" className="link">
+                <a
+                  href="https://www.instagram.com/futureRahma"
+                  className="link"
+                >
                   <IoLogoInstagram className={styles.socialIcon} />
                 </a>
-                <a href="https://instagram.com/" className="link">
+                <a href="mailto:futurerahma@futurerahma.com" className="link">
                   <IoMailOutline className={styles.socialIcon} />
                 </a>
-                <a href="https://instagram.com/" className="link">
+                <a href="https://soundcloud.com/futurerahma" className="link">
                   <IoLogoSoundcloud className={styles.socialIcon} />
                 </a>
               </div>

@@ -61,6 +61,11 @@ $accent: rgb(235, 121, 26);
 
 .socialIcon {
     font-size: 1.5rem;
+    transition: 800ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+}
+
+.socialIcon:hover {
+    color: $primary;
 }
 
 .aboutContainer {
@@ -89,10 +94,10 @@ $accent: rgb(235, 121, 26);
     }
 
     .socialLinksContainer {
-        width: 100%;
+        width: calc(100% - 2rem);
     }
 
     .aboutContainer {
-        width: 100%;
+        width: calc(100% - 2rem);
     }
 }
