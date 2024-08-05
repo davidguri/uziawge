@@ -1,0 +1,37 @@
+$color: rgb(251, 223, 252);
+$background: rgb(13, 1, 14);
+$primary: rgb(233, 121, 243);
+$secondary: rgb(151, 26, 13);
+$accent: rgb(235, 121, 26);
+
+.main {
+    height: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin-inline: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 94svw;
+        height: 100%;
+        margin-inline: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+}

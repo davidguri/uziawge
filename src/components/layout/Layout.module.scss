@@ -1,0 +1,99 @@
+$color: rgb(251, 223, 252);
+$background: rgb(13, 1, 14);
+$primary: rgb(233, 121, 243);
+$secondary: rgb(151, 26, 13);
+$accent: rgb(235, 121, 26);
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    height: 100svh;
+}
+
+.nav {
+    width: fit-content;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+}
+
+.navTitle {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    transition: 800ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+    width: fit-content;
+}
+
+.navTitle:hover {
+    text-shadow: 0.15rem 0.3rem $primary;
+}
+
+.contentMobile {
+    display: none;
+}
+
+.linksContainer {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.socialLinksContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.linkText {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.25;
+    transition: 800ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+    margin-right: 0.8rem;
+}
+
+.linkText:hover {
+    text-shadow: 0.1rem 0.2rem $primary;
+}
+
+.socialIcon {
+    font-size: 1.5rem;
+    transition: 800ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+}
+
+.socialIcon:hover {
+    color: $primary;
+}
+
+.content {
+    flex: 3;
+}
+
+@media (max-width: 768px) {
+    .navTitle {
+        margin-bottom: 2rem;
+    }
+
+    .linksContainer {
+        width: 94vw;
+        height: fit-content;
+        margin-top: 2rem;
+        border: 1px solid red;
+    }
+
+    .contentMobile {
+        display: flex;
+        height: fit-content;
+        height: 100%;
+    }
+}

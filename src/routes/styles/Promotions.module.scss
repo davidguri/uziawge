@@ -1,0 +1,85 @@
+$color: rgb(251, 223, 252);
+$background: rgb(13, 1, 14);
+$primary: rgb(233, 121, 243);
+$secondary: rgb(151, 26, 13);
+$accent: rgb(235, 121, 26);
+
+.main {
+    height: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin-inline: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    padding: 1.25rem;
+    width: calc(80% - 2.5vw);
+    border: 0px;
+    background-color: $color;
+    font-size: 1.5rem;
+    font-weight: 800;
+    outline: none;
+    color: $background;
+}
+
+.submit {
+    padding: 1.25rem;
+    align-self: stretch;
+    background-color: $color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.submitText {
+    font-size: 1.5rem;
+    color: $background;
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 94svw;
+        height: 100%;
+        margin-inline: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .input {
+        padding: 1rem;
+        width: calc(80% - 2vw);
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .submit {
+        padding: 1rem;
+    }
+
+    .submitText {
+        font-size: 1.25rem;
+    }
+}

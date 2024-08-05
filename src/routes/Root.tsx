@@ -1,8 +1,6 @@
 import styles from "./styles/Root.module.scss";
 import Layout from "../components/layout/Layout";
 
-import StarsBackground from "../components/global/Starry.component";
-
 import { Link } from "react-router-dom";
 
 import {
@@ -18,7 +16,6 @@ export default function Root() {
       <Layout>
         <main className={styles.main}>
           <section className={styles.heroSection}>
-            <StarsBackground />
             <div className={styles.titleContainer}>
               <Link className={"link"} to="/">
                 <text className={styles.heroTitle}>
@@ -35,9 +32,9 @@ export default function Root() {
                 <text className={styles.linkText}>MERCH</text>
               </Link>
               <Link className={"link"} to="/promotions">
-                <text className={styles.linkText}>PROMOTIONS</text>
+                <text className={styles.linkText}>PROMOS</text>
               </Link>
-              <Link className={"link"} to="/merch">
+              <Link className={"link"} to="/new_release">
                 <text className={styles.linkText}>MOLLY WORLD</text>
               </Link>
               <div className={styles.socialLinksContainer}>
@@ -45,6 +42,7 @@ export default function Root() {
                   href="https://www.instagram.com/futureRahma"
                   className="link"
                   target="_blank"
+                  id="instagram"
                 >
                   <IoLogoInstagram className={styles.socialIcon} />
                 </a>
@@ -52,16 +50,22 @@ export default function Root() {
                   href="https://open.spotify.com/artist/16AIvrFqhQyhBbe7HXIWkw?autoplay=true"
                   className="link"
                   target="_blank"
+                  id="spotify"
                 >
                   <AiOutlineSpotify className={styles.socialIcon} />
                 </a>
-                <a href="mailto:futurerahma@futurerahma.com" className="link">
+                <a
+                  href="mailto:futurerahma@futurerahma.com"
+                  className="link"
+                  id="email"
+                >
                   <IoMailOutline className={styles.socialIcon} />
                 </a>
                 <a
                   href="https://soundcloud.com/futurerahma"
                   className="link"
                   target="_blank"
+                  id="soundcloud"
                 >
                   <IoLogoSoundcloud className={styles.socialIcon} />
                 </a>
